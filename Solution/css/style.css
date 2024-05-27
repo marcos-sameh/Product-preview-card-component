@@ -1,0 +1,158 @@
+* {
+    /* padding: 0px ; */
+    /* margin: 0px ; */
+    box-sizing: border-box;
+}
+
+/* Common Classes */
+.border-25 {
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clr {
+    clear: both;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Fraunces";
+}
+
+
+
+.main {
+    width: 60%;
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+ }
+
+.main .left {
+    width: 45%;
+    display:block !important;
+    min-height: 80vh !important;
+     background-image: url('../image-product-desktop.jpg') !important;
+      background-size: cover;
+    background-position: center;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    
+}
+ 
+
+.main .right {
+    padding: 2.5rem 1rem 2rem 0;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.main .right .span-1 {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main .right h1 {
+    font-size: 2.5rem;
+    margin: .5rem 0 !important;
+
+}
+
+.main .right h1 span {
+    display: block;
+}
+
+.main .right p {
+    color: hsl(228, 12%, 48%);
+    margin: .8rem 0 !important;
+    line-height: 1.5;
+}
+
+.main .right .price-div {
+    padding: 1rem 0rem;
+}
+
+.main .right .price-div span:first-child {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main .right .price-div span:nth-child(even) {
+    text-decoration: line-through;
+    font-size: .9rem;
+    color: hsl(228, 12%, 48%);
+    margin-right: 7rem;
+}
+
+.main .right button {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+
+}
+
+.main .right button span {
+    margin-right: 1rem;
+}
+
+.main .right button:hover {
+    background-color: hsl(212, 21%, 14%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+
+/* Small Screen */
+@media screen and (max-width: 750px) {
+
+    .main {
+        width: 80%;
+        margin: 10px auto;
+        flex-direction: column;
+
+    }
+
+    .main .left {
+        width: 100%;
+        display: inline-block;
+        background-image: url('../image-product-mobile.jpg');
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .main .right {
+        padding: 2.5rem 1rem 2rem;
+        width: 100%;
+    }
+
+}
